@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		786FD959291A7834000DFECA /* FrameworkTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 786FD958291A7834000DFECA /* FrameworkTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		786FD960291A7860000DFECA /* SampleObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FD95F291A7860000DFECA /* SampleObj.swift */; };
+		786FD962291A78A5000DFECA /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FD961291A78A5000DFECA /* SampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		786FD955291A7834000DFECA /* FrameworkTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		786FD958291A7834000DFECA /* FrameworkTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkTest.h; sourceTree = "<group>"; };
+		786FD95F291A7860000DFECA /* SampleObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleObj.swift; sourceTree = "<group>"; };
+		786FD961291A78A5000DFECA /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				786FD958291A7834000DFECA /* FrameworkTest.h */,
+				786FD95F291A7860000DFECA /* SampleObj.swift */,
+				786FD961291A78A5000DFECA /* SampleViewController.swift */,
 			);
 			path = FrameworkTest;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					786FD954291A7834000DFECA = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -129,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786FD962291A78A5000DFECA /* SampleViewController.swift in Sources */,
+				786FD960291A7860000DFECA /* SampleObj.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 		786FD95D291A7834000DFECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		786FD95E291A7834000DFECA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
